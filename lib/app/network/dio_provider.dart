@@ -22,8 +22,8 @@ class DioProvider {
 
   static final BaseOptions _options = BaseOptions(
     baseUrl: baseUrl,
-    connectTimeout: 60 * 1000,
-    receiveTimeout: 60 * 1000,
+    connectTimeout: Duration(milliseconds: (60 * 1000)),
+    receiveTimeout: Duration(milliseconds: (60 * 1000)),
   );
 
   static Dio get httpDio {

@@ -8,7 +8,7 @@ import '/app/modules/favorite/controllers/favorite_controller.dart';
 class FavoriteView extends BaseView<FavoriteController> {
   @override
   PreferredSizeWidget? appBar(BuildContext context) {
-    return CustomAppBar(
+    return const CustomAppBar(
       appBarTitleText: 'Favorite',
     );
   }

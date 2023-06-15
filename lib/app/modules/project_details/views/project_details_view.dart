@@ -12,7 +12,7 @@ import '/app/modules/project_details/controllers/project_details_controller.dart
 class ProjectDetailsView extends BaseView<ProjectDetailsController> {
   @override
   PreferredSizeWidget? appBar(BuildContext context) {
-    return CustomAppBar(
+    return const CustomAppBar(
       appBarTitleText: 'Repository details',
       isBackButtonEnabled: true,
     );
