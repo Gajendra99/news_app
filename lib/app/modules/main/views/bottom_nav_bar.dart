@@ -30,6 +30,7 @@ class BottomNavBar extends StatelessWidget {
 
     return Obx(
       () => BottomNavigationBar(
+        elevation: 0,
         key: bottomNavKey,
         items: navItems
             .map(
@@ -40,17 +41,17 @@ class BottomNavBar extends StatelessWidget {
                     width: AppValues.iconDefaultSize,
                     color:
                         navItems.indexOf(navItem) == navController.selectedIndex
-                            ? selectedItemColor
-                            : unselectedItemColor,
+                            ? const Color(0xFF021642)
+                            : const Color(0x55021642),
                   ),
                   label: navItem.navTitle,
                   tooltip: ""),
             )
             .toList(),
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
-        backgroundColor: AppColors.colorAccent,
+        backgroundColor: Colors.white,
         selectedItemColor: selectedItemColor,
         unselectedItemColor: unselectedItemColor,
         currentIndex: navController.selectedIndex,

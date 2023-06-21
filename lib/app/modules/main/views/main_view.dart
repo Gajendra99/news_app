@@ -14,11 +14,6 @@ import '/app/modules/settings/views/settings_view.dart';
 // ignore: must_be_immutable
 class MainView extends BaseView<MainController> {
   @override
-  PreferredSizeWidget? appBar(BuildContext context) {
-    return null;
-  }
-
-  @override
   Widget body(BuildContext context) {
     return Container(
       key: UniqueKey(),
@@ -28,7 +23,6 @@ class MainView extends BaseView<MainController> {
 
   @override
   Widget? bottomNavigationBar() {
-
     return BottomNavBar(onNewMenuSelected: controller.onMenuSelected);
   }
 

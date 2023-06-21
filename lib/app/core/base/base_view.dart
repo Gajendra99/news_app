@@ -21,8 +21,6 @@ abstract class BaseView<Controller extends BaseController>
 
   Widget body(BuildContext context);
 
-  PreferredSizeWidget? appBar(BuildContext context);
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -60,7 +58,6 @@ abstract class BaseView<Controller extends BaseController>
       //sets ios status bar color
       backgroundColor: pageBackgroundColor(),
       key: globalKey,
-      appBar: appBar(context),
       floatingActionButton: floatingActionButton(),
       body: pageContent(context),
       bottomNavigationBar: bottomNavigationBar(),
@@ -85,10 +82,7 @@ abstract class BaseView<Controller extends BaseController>
 
   void showToast(String message) {
     Fluttertoast.showToast(
-        msg: message,
-        toastLength: Toast.LENGTH_SHORT,
-        timeInSecForIosWeb: 1
-    );
+        msg: message, toastLength: Toast.LENGTH_SHORT, timeInSecForIosWeb: 1);
   }
 
   Color pageBackgroundColor() {

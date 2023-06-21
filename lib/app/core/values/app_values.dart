@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
 abstract class AppValues {
   static const double padding = 16;
   static const double padding_zero = 0;
@@ -96,4 +99,26 @@ abstract class AppValues {
   static const int defaultThrottleTimeInMilliSeconds = 500;
 
   static const double height_16 = 16;
+
+  //real app values
+
+  static const double tab_bar_item_width = 300;
+  static const double tab_bar_item_radius = 20;
+
+  static const double item_height = 200;
+  static const double item_title_width = 0.8;
+  static const double btn_height = 40;
+  static const double btn_radius = 20;
+  static const double btn_width_remove = 30;
+  static const double category_img_width = 20;
+
+  //Specific Card Width
+  static const double card_width = 170;
+  static const double card_height = 270;
+
+  //rating star size
+  static const double ratingStarSize = 20;
+
+  //item tile values
+  static const double item_tile_height = 40;
 }

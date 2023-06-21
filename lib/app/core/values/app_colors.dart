@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
-  static const Color pageBackground = Color(0xFFFAFBFD);
+  static const Color pageBackground = Color.fromARGB(255, 255, 255, 255);
   static const Color statusBarColor = Color(0xFF38686A);
-  static const Color appBarColor = Color(0xFF38686A);
+  static const Color appBarColor = Color.fromARGB(255, 255, 255, 255);
   static const Color appBarIconColor = Color(0xFFFFFFFF);
   static const Color appBarTextColor = Color(0xFFFFFFFF);
 
@@ -45,4 +45,8 @@ abstract class AppColors {
   static const Color switchInactiveColor = Color(0xFFABABAB);
   static Color elevatedContainerColorOpacity = Colors.grey.withOpacity(0.5);
   static const Color suffixImageColor = Colors.grey;
+
+  //app data
+
+  static const Color app_active_color = Color(0xFF021642);
 }

@@ -23,6 +23,9 @@ dependencies:
   pretty_dio_logger: ^1.1.1
   font_awesome_flutter: ^10.4.0
   fluttertoast: ^8.0.8
+  rive: ^0.11.3
+  carousel_slider: ^4.2.1
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:
@@ -37,12 +40,14 @@ flutter_icons:
   android: "ic_launcher"
   ios: true
   image_path: "images/launcher_icon.png"
+  
 
 flutter:
   generate: true
   uses-material-design: true
   assets:
     - images/
+    - assets/product_list.json
   fonts:
     - family: Roboto
       fonts:
